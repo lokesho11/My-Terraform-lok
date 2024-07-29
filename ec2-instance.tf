@@ -3,7 +3,7 @@ resource "aws_instance" "my-ec2-vm_linux" {
   ami                    = data.aws_ami.ubuntu.id
   instance_type          = "t2.micro"
   key_name               = "key"
-#count                  = var.ec2_instance_count
+  count                  = var.ec2_instance_count
   user_data              = <<-EOF
     #!/bin/bash
     sudo yum update -y

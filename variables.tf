@@ -11,10 +11,10 @@ variable "ec2_ami_id" {
   default     = "ami-00952f27cf14db9cd" # Amazon2 Linux AMI ID
 }*/
 
-/*
+
 variable "ec2_instance_count" {
   description = "EC2 Instance Count"
   type        = number
   default     = 2
-}*/
+
 
